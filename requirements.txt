@@ -1,0 +1,11 @@
+# Local analysis (figures + HTML report from results.json):
+numpy
+matplotlib
+
+# Launching the experiment on Modal:
+modal
+
+# The GPU-side dependencies (torch, transformers, sglang[all]==0.5.6,
+# flashinfer, accelerate, huggingface_hub, ...) are pinned inside the Modal
+# image definition in code/run.py and code/probe.py — they are installed in the
+# remote container, not locally.
